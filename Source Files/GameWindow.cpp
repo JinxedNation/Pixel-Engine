@@ -4,15 +4,15 @@
 void PixelEngine::GameWindow::clear()
 {
     m_ProjectTitle = "";
-    m_WindowHeight = 0;
-    m_WindowHeight = 0;
+    m_wHeight      = 0;
+    m_wWidth       = 0;
     m_GameWindow   = nullptr;
 }
 
 
-PixelEngine::GameWindow::GameWindow(int tempWidth, int tempHeight, const char* tempTitle) : m_GameWindow(nullptr), m_WindowWidth(tempWidth), m_WindowHeight(tempHeight), m_ProjectTitle(tempTitle)
+PixelEngine::GameWindow::GameWindow(int tempWidth, int tempHeight, const char* tempTitle) : m_GameWindow(nullptr), m_wWidth(tempWidth), m_wHeight(tempHeight), m_ProjectTitle(tempTitle)
 {
-    m_GameWindow = launchGameWindow(m_WindowWidth, m_WindowHeight, m_ProjectTitle);
+    m_GameWindow = launchGameWindow(m_wWidth, m_wHeight, m_ProjectTitle);
     
     glfwMakeContextCurrent(m_GameWindow);
     glfwSwapInterval(1);
@@ -36,14 +36,13 @@ void PixelEngine::GameWindow::getGLFWSettings()
 
 GLFWwindow* PixelEngine::GameWindow::getGameWindow()   const { return m_GameWindow;   }
 const char* PixelEngine::GameWindow::getProjectTitle() const { return m_ProjectTitle; }
-int         PixelEngine::GameWindow::getWindowWidth()          const { return m_WindowWidth;  }
-int         PixelEngine::GameWindow::getWindowHeight()         const { return m_WindowHeight; }
-
+int         PixelEngine::GameWindow::getWindowWidth()  const { return m_wWidth;       }
+int         PixelEngine::GameWindow::getWindowHeight() const { return m_wHeight;      }
 
 
 void PixelEngine::GameWindow::setProjectTitle(const char* tempTitle) { m_ProjectTitle = tempTitle;  } 
-void PixelEngine::GameWindow::setWindowWidth(int tempWidth)          { m_WindowWidth  = tempWidth;  }
-void PixelEngine::GameWindow::setWindowHeight(int tempHeight)        { m_WindowHeight = tempHeight; }
+void PixelEngine::GameWindow::setWindowWidth(int  tempWidth)         { m_wWidth       = tempWidth;  }
+void PixelEngine::GameWindow::setWindowHeight(int tempHeight)        { m_wHeight      = tempHeight; }
 
 
 void PixelEngine::GameWindow::testIsGLFWWorking()
@@ -51,7 +50,9 @@ void PixelEngine::GameWindow::testIsGLFWWorking()
     if (!glfwInit())
     {
         std::cout << "Error: Failed to load GLFW libraries" << std::endl;
+
         glfwTerminate();
+        
         exit(EXIT_FAILURE);
     }
 }
@@ -85,11 +86,10 @@ void PixelEngine::GameWindow::testIsGLADWorking()
 GLFWwindow* PixelEngine::GameWindow::launchGameWindow(int tempWidth, int tempHeight, const char* tempTitle)
 {
     testIsGLFWWorking();
-
     getGLFWSettings();
 
-    GLFWwindow* m_GameWindow = glfwCreateWindow(tempWidth, tempHeight, tempTitle, NULL, NULL);
 
+    GLFWwindow* m_GameWindow = glfwCreateWindow(tempWidth, tempHeight, tempTitle, NULL, NULL);
     testBuildWindow(m_GameWindow);
 
 
