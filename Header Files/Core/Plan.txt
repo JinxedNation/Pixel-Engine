@@ -1,0 +1,73 @@
+Core: Implement the GameObject class and GameAssetFactory class first. These classes are the foundation of your game engine, as they define the basic structure of game objects and how to create them.
+
+Utilities: Develop the FileManager and LuaHelper classes to handle file reading and Lua script parsing. These utilities will be used extensively to load game assets and data from external files.
+
+View: Create the GraphicsEngine and GraphicsFacade classes. At this stage, you can implement basic rendering functionality for simple objects, such as cubes or spheres, to ensure the graphics engine is working correctly.
+
+Model: Develop specialized game object classes, such as Player, Enemy, and Terrain, which inherit from GameObject. These classes will define the specific properties and behaviors for different game objects.
+
+Controller: Implement the InputEngine and InputFacade classes to handle user input and game events. At this stage, you can add basic input handling, such as moving the camera or controlling a character.
+
+Physics: Create the PhysicsEngine and PhysicsFacade classes to integrate a physics library, such as Bullet or PhysX, into your game engine. Implement basic collision detection and physics simulations for game objects.
+
+Main: Write the main game loop in the main.cpp file, which will tie together the Model, View, and Controller components. At this point, you can create a basic game scene using your game engine.
+
+Iterate and refine: Once you have implemented all sections, iterate over each component to add features, improve performance, and fix any bugs. Test your game engine with various game assets and scenarios to ensure it meets the requirements of the Model-View-Controller pattern and offers reusability and extensibility.
+
+By implementing the sections in this order, you can progressively build up your game engine and ensure that each component works correctly before moving on to the next one.
+
+
+GameEngine/
+│
+├── Assets/
+│   ├── Models/
+│   ├── Textures/
+│   ├── Sounds/
+│   └── Scripts/
+│       ├── GameData.lua
+│       ├── Level1.lua
+│       └── ...
+│
+├── Source/
+│   ├── Core/
+│   │   ├── GameObject.h
+│   │   ├── GameObject.cpp
+│   │   ├── GameAssetFactory.h
+│   │   └── GameAssetFactory.cpp
+│   │
+│   ├── Engine/
+│   │   ├── Model/
+│   │   │   ├── Player.h
+│   │   │   ├── Player.cpp
+│   │   │   ├── Enemy.h
+│   │   │   ├── Enemy.cpp
+│   │   │   ├── Terrain.h
+│   │   │   └── Terrain.cpp
+│   │   │
+│   │   ├── View/
+│   │   │   ├── GraphicsEngine.h
+│   │   │   ├── GraphicsEngine.cpp
+│   │   │   ├── GraphicsFacade.h
+│   │   │   └── GraphicsFacade.cpp
+│   │   │
+│   │   └── Controller/
+│   │       ├── InputEngine.h
+│   │       ├── InputEngine.cpp
+│   │       ├── InputFacade.h
+│   │       └── InputFacade.cpp
+│   │
+│   ├── Physics/
+│   │   ├── PhysicsEngine.h
+│   │   ├── PhysicsEngine.cpp
+│   │   ├── PhysicsFacade.h
+│   │   └── PhysicsFacade.cpp
+│   │
+│   └── Utilities/
+│       ├── LuaHelper.h
+│       ├── LuaHelper.cpp
+│       ├── FileManager.h
+│       └── FileManager.cpp
+│
+└── Main/
+    ├── main.cpp
+    └── GameEngineConfig.lua
