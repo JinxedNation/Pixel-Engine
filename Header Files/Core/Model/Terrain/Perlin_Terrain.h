@@ -9,6 +9,6 @@ namespace PixelEngine
     {
         Perlin_Terrain();
         //Perlin_Terrain();
-        generateTexture(void);
+        int generateTexture(void);
     };
 }
