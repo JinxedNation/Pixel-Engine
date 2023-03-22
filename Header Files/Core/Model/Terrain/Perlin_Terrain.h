@@ -2,7 +2,7 @@
 #include <fstream>
 
 // call openGL loader
-
+/****
 namespace PixelEngine
 {
     class Perlin_Terrain
@@ -12,3 +12,4 @@ namespace PixelEngine
         generateTexture(void);
     };
 }
+**/
