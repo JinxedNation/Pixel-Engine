@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
+    <ClCompile Include="glad.c" />
     <ClCompile Include="Source Files\Core\Factory_GameAsset.cpp" />
     <ClCompile Include="Source Files\Core\Object.cpp" />
     <ClCompile Include="Source Files\Core\Player.cpp" />

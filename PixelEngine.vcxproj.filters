@@ -48,6 +48,9 @@
     <ClCompile Include="Source Files\View\GameWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\Core\Model\AI\ChaseState.h">

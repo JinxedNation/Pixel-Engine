@@ -94,7 +94,5 @@ C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(53,56): error C2064: term does not evaluate to a function taking 1 arguments
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(53,45): error C2064: term does not evaluate to a function taking 1 arguments
   GameWindow.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\View\GameWindow.cpp(78,29): error C2065: 'GLADloadproc': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\View\GameWindow.cpp(78,10): error C3861: 'gladLoadGLLoader': identifier not found
   Generating Code...
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Core\Factory_GameAsset.cpp(19): error C4716: 'PixelEngine::Factory_GameAsset::generate_ObjectType': must return a value
