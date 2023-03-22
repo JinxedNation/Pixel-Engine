@@ -4,7 +4,6 @@
 
 namespace PixelEngine
 {
-
         /*******************************************************************************************************************************************************************
          * @class   : NPC_States Abstract Base Class
          * @brief   : Enables us to create multiple classes that can represent a range of differnet NPC Behaviours / states
@@ -20,6 +19,14 @@ namespace PixelEngine
     class NPC_States
     {
         public:
+                /*************************
+                 * @brief : NPC_States Constructor 
+                 * @brief : 
+                 *************************/
+
+            NPC_States();
+
+
                 /*************************
                  * @brief : NPC_States Destructor 
                  * @brief : Used to delete an NPC_States object

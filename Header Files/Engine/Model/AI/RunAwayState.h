@@ -12,7 +12,6 @@
 
 namespace PixelEngine
 {
-
         /*******************************************************************************************************************************************************************
          * @class   : RunAwayState
          * @brief   : Calls the abstract base class NPC_States before performing an update and various other tasks
@@ -27,7 +26,25 @@ namespace PixelEngine
 	class RunAwayState : public NPC_States
 	{
         public:
-                            
+
+                /*******************************************************************************************************
+                 * @brief  : RunAwayState Constructor 
+                 * @brief  : used create an RunAwayState object
+                 * @return : void
+                 *******************************************************************************************************/
+
+            RunAwayState();
+
+                
+                /*******************************************************************************************************
+                 * @brief  : RunAwayState Destructor 
+                 * @brief  : used destroy an RunAwayState object
+                 * @return : void
+                 *******************************************************************************************************/
+
+            virtual ~RunAwayState();
+
+
                 /*******************************************************************************************************
                  * @brief  : update()
                  * @brief  : sets the NPCS state, Note NPC leaves this state once the chaser gets too close
