@@ -4,19 +4,20 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-/******************************************************************************************************************
- * @class   : GameWindow
- * @brief   : Used to generate a gameWindow, only contains information relevant to a game window and launching GLFW
- * 
- * 
- * @author  : William Halling
- * @date    : 2023 March
- * @version : 1.2
- * @bug     : None known, however engineer was tired I suggest bringing coffee
- ******************************************************************************************************************/
-
 namespace PixelEngine
 {
+	
+		/******************************************************************************************************************
+		 * @class   : GameWindow
+		 * @brief   : Used to generate a gameWindow, only contains information relevant to a game window and launching GLFW
+		 * 
+		 * 
+		 * @author  : William Halling
+		 * @date    : 2023 March
+		 * @version : 1.2
+		 * @bug     : None known, however engineer was tired I suggest bringing coffee
+		 ******************************************************************************************************************/
+
 	class GameWindow
 	{
 		public:

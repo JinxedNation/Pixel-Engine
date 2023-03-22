@@ -1,43 +1,43 @@
 #pragma once
-#include "NPC_States.h"
+
+#include "NPC.h"
 
 
-
-#include <glm/glm.hpp> // Includes the core GLM library
+#include <glm/glm.hpp>                  // Includes the core GLM library
 #include <glm/gtc/matrix_transform.hpp> // For matrix transformations (e.g., glm::translate, glm::rotate, glm::scale)
-#include <glm/gtc/type_ptr.hpp> // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
-#include <glm/gtc/constants.hpp> // For mathematical constants (e.g., glm::pi)
-#include <glm/gtx/string_cast.hpp> // For converting GLM types to strings (e.g., glm::to_string)
+#include <glm/gtc/type_ptr.hpp>         // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
+#include <glm/gtc/constants.hpp>        // For mathematical constants (e.g., glm::pi)
+#include <glm/gtx/string_cast.hpp>      // For converting GLM types to strings (e.g., glm::to_string)
 
-    /*******************************************************************************************************************************************************************
-     * @class   : ChaseState
-     * @brief   : Calls the abstract base class NPC_States before performing an update and various other tasks
-     *          : Triggers the NPC to chase either the player or the other NPCS until it tags either an NPC or Player
-     *
-     *
-     * @author  : William Halling
-     * @date    : 2023 March
-     * @version : 1.0
-     * @bug     : None known, however engineer was tired I suggest bringing coffee
-     *******************************************************************************************************************************************************************/
 
 namespace PixelEngine
 {
-    class ChaseState : public NPC_States
-    {
-        public:
 
-                
+        /*******************************************************************************************************************************************************************
+         * @class   : RunAwayState
+         * @brief   : Calls the abstract base class NPC_States before performing an update and various other tasks
+         *			: Triggers the NPC to run away from the player and an NPC if one is the chaser
+        *
+        * @author  : William Halling
+        * @date    : 2023 March
+        * @version : 1.0
+        * @bug     : None known, however engineer was tired I suggest bringing coffee
+        *******************************************************************************************************************************************************************/
+
+	class RunAwayState : public NPC_States
+	{
+        public:
+                            
                 /*******************************************************************************************************
                  * @brief  : update()
-                 * @brief  : sets the NPCS state, Note NPC leaves this state once it tags a player
+                 * @brief  : sets the NPCS state, Note NPC leaves this state once the chaser gets too close
                  * @brief  : Performs necessary update functions as required
                  * @param  : NPC* tempNPC
                  * 
                  * @return : void
                  *******************************************************************************************************/ 
             
-            void update(NPC* tempNPC) override;
+		    void update(NPC* tempNPC) override;
 
 
                 /*******************************************************************************************************
@@ -81,8 +81,9 @@ namespace PixelEngine
 
             bool getIsHidden() const;
 
+
         private:
             bool m_IsHidden;
             glm::vec3 m_NPCSpeed;
-    };
+	};
 }

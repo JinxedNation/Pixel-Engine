@@ -1,20 +1,29 @@
 #pragma once
 #include "NPC_States.h"
 
+#include <glm/glm.hpp>                  // Includes the core GLM library
+#include <glm/gtc/matrix_transform.hpp> // For matrix transformations (e.g., glm::translate, glm::rotate, glm::scale)
+#include <glm/gtc/type_ptr.hpp>         // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
+#include <glm/gtc/constants.hpp>        // For mathematical constants (e.g., glm::pi)
+#include <glm/gtx/string_cast.hpp>      // For converting GLM types to strings (e.g., glm::to_string)
 
-     /*******************************************************************************************************************************************************************
-      * @class   : NPC
-      * @brief   : Abstract base class used to define a basic interface for all NPCs that will be in thegame
-      *
-      * @author  : William Halling
-      * @date    : 2023 March
-      * @version : 1.0
-      * @bug     : None known, however engineer was tired I suggest bringing coffee
-      *******************************************************************************************************************************************************************/
+
 
 
 namespace PixelEngine
 {
+
+    
+        /*******************************************************************************************************************************************************************
+         * @class   : NPC
+         * @brief   : Abstract base class used to define a basic interface for all NPCs that will be in thegame
+         *
+         * @author  : William Halling
+         * @date    : 2023 March
+         * @version : 1.0
+         * @bug     : None known, however engineer was tired I suggest bringing coffee
+         *******************************************************************************************************************************************************************/
+
     class NPC
     {
         public:
