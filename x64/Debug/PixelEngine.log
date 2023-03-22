@@ -1,47 +1,22 @@
 ﻿  Factory_GameAsset.cpp
   LuaLoader.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(1,10): fatal error C1083: Cannot open include file: 'LuaLoader.h': No such file or directory
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(4,73): error C2178: 'PixelEngine::LuaLoader::{ctor}' cannot be declared with 'explicit' specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(14,19): error C2065: 'm_launchLua': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(27,22): error C2065: 'm_launchLua': undeclared identifier
   ChaseState.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(58,31): error C2061: syntax error: identifier 'NPC_States'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,23): error C2143: syntax error: missing ';' before '*'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,45): error C2238: unexpected token(s) preceding ';'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(6,5): error C3861: 'setSpeed': identifier not found
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,31): error C2039: 'setSpeed': is not a member of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(26): message : see declaration of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,63): error C2065: 'm_NPCSpeed': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(40,18): error C3668: 'PixelEngine::ChaseState::update': method with override specifier 'override' did not override any base class methods
   HideState.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(34,9): error C3668: 'PixelEngine::HideState::update': method with override specifier 'override' did not override any base class methods
   NPC.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,24): error C2039: 'set_NPCState': is not a member of 'PixelEngine::NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,36): error C2182: 'set_NPCState': illegal use of type 'void'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,37): error C2065: 'NPC_States': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,49): error C2065: 'tempState': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,60): error C2143: syntax error: missing ';' before '{'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,60): error C2447: '{': missing function header (old-style formal list?)
   RunAwayState.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(39,8): error C3668: 'PixelEngine::RunAwayState::update': method with override specifier 'override' did not override any base class methods
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(6,14): error C2039: 'setVelocity': is not a member of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(6,26): error C2065: 'npc': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(7,14): error C2039: 'setIsHidden': is not a member of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
   Perlin_Terrain.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(12,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(12,30): warning C4183: 'generateTexture': missing return type; assumed to be a member function returning 'int'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(5,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(5,8): error C2146: syntax error: missing ';' before identifier 'm_TextureName'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(6,9): error C2143: syntax error: missing ';' before '*'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(6,9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(6,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(8,6): error C2653: 'Perlin_Terrain': is not a class or namespace name
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(19,14): error C2065: 'm_Ptr': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(22,34): error C2059: syntax error: ')'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(23,5): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(26,9): error C2146: syntax error: missing ';' before identifier 'exit'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(32,9): error C3861: 'setFrequency': identifier not found
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(34,9): error C2065: 'm_Ptr': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(51,76): error C2065: 'm_Ptr': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(53,23): error C2065: 'm_Ptr': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(53,56): error C2064: term does not evaluate to a function taking 1 arguments
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(53,45): error C2064: term does not evaluate to a function taking 1 arguments
   GameWindow.cpp
   Generating Code...
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Core\Factory_GameAsset.cpp(19): error C4716: 'PixelEngine::Factory_GameAsset::generate_ObjectType': must return a value
