@@ -1,5 +1,4 @@
-﻿  Client.cpp
-  Factory_GameAsset.cpp
+﻿  Factory_GameAsset.cpp
   LuaLoader.cpp
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(1,10): fatal error C1083: Cannot open include file: 'LuaLoader.h': No such file or directory
   ChaseState.cpp
@@ -7,76 +6,26 @@ C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,23): error C2143: syntax error: missing ';' before '*'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(64,45): error C2238: unexpected token(s) preceding ';'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(43,30): error C2061: syntax error: identifier 'Vector3D'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(65,22): error C3646: 'getNPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(65,33): error C2059: syntax error: '('
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(65,41): error C2238: unexpected token(s) preceding ';'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(78,22): error C3646: 'm_NPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(78,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(6,5): error C3861: 'setSpeed': identifier not found
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,31): error C2039: 'setSpeed': is not a member of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(18): message : see declaration of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,39): error C2182: 'setSpeed': illegal use of type 'void'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,40): error C2065: 'Vector3D': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,49): error C2146: syntax error: missing ')' before identifier 'tempSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,60): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,60): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(17,35): error C2039: 'getNPCSpeed': is not a member of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(18): message : see declaration of 'PixelEngine::ChaseState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(17,46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(17,46): error C2146: syntax error: missing ';' before identifier 'getNPCSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(17,55): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(17,55): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(26): message : see declaration of 'PixelEngine::ChaseState'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\ChaseState.cpp(12,63): error C2065: 'm_NPCSpeed': undeclared identifier
   HideState.cpp
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(35,30): error C2061: syntax error: identifier 'Vector3D'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(57,22): error C3646: 'getNPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(57,33): error C2059: syntax error: '('
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(57,41): error C2238: unexpected token(s) preceding ';'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(71,22): error C3646: 'm_NPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(71,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(24,9): error C3668: 'PixelEngine::HideState::update': method with override specifier 'override' did not override any base class methods
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(5,51): error C2761: 'void PixelEngine::HideState::setNPCSpeed(void)': redeclaration of member is not allowed
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(5,42): error C2065: 'Vector3D': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(5,51): error C2146: syntax error: missing ')' before identifier 'tempSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(5,62): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(5,62): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(8,34): error C2039: 'getNPCSpeed': is not a member of 'PixelEngine::HideState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(19): message : see declaration of 'PixelEngine::HideState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(8,45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(8,45): error C2146: syntax error: missing ';' before identifier 'getNPCSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(8,54): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\HideState.cpp(8,54): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\HideState.h(34,9): error C3668: 'PixelEngine::HideState::update': method with override specifier 'override' did not override any base class methods
   NPC.cpp
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
   RunAwayState.cpp
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC_States.h(34,33): error C2061: syntax error: identifier 'NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(42,30): error C2061: syntax error: identifier 'Vector3D'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(64,22): error C3646: 'getNPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(64,33): error C2059: syntax error: '('
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(64,41): error C2238: unexpected token(s) preceding ';'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(78,22): error C3646: 'm_NPCSpeed': unknown override specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(78,32): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(31,8): error C3668: 'PixelEngine::RunAwayState::update': method with override specifier 'override' did not override any base class methods
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(39,8): error C3668: 'PixelEngine::RunAwayState::update': method with override specifier 'override' did not override any base class methods
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(6,14): error C2039: 'setVelocity': is not a member of 'PixelEngine::NPC'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(6,26): error C2065: 'npc': undeclared identifier
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(7,14): error C2039: 'setIsHidden': is not a member of 'PixelEngine::NPC'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(12,54): error C2761: 'void PixelEngine::RunAwayState::setNPCSpeed(void)': redeclaration of member is not allowed
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(12,45): error C2065: 'Vector3D': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(12,54): error C2146: syntax error: missing ')' before identifier 'tempSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(12,65): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(12,65): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(15,37): error C2039: 'getNPCSpeed': is not a member of 'PixelEngine::RunAwayState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(18): message : see declaration of 'PixelEngine::RunAwayState'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(15,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(15,48): error C2146: syntax error: missing ';' before identifier 'getNPCSpeed'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(15,57): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\RunAwayState.cpp(15,57): error C2447: '{': missing function header (old-style formal list?)
   Perlin_Terrain.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(11,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(11,30): warning C4183: 'generateTexture': missing return type; assumed to be a member function returning 'int'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(12,30): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\Terrain\Perlin_Terrain.h(12,30): warning C4183: 'generateTexture': missing return type; assumed to be a member function returning 'int'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(5,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(5,8): error C2146: syntax error: missing ';' before identifier 'm_TextureName'
 C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\Terrain\Perlin_Terrain.cpp(6,9): error C2143: syntax error: missing ';' before '*'

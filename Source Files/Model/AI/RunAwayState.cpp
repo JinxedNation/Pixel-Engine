@@ -9,8 +9,8 @@ void PixelEngine::RunAwayState::update(NPC* tempNPC)
 }
 
 void PixelEngine::RunAwayState::setIsHidden(bool tempHidden) { m_IsHidden = tempHidden; }
-void PixelEngine::RunAwayState::setNPCSpeed(Vector3D tempSpeed) { m_NPCSpeed = tempSpeed;  }
+void PixelEngine::RunAwayState::setNPCSpeed(glm::vec3 tempSpeed) { m_NPCSpeed = tempSpeed;  }
 
 
-Vector3D PixelEngine::RunAwayState::getNPCSpeed() const { return m_NPCSpeed; }
+glm::vec3 PixelEngine::RunAwayState::getNPCSpeed() const { return m_NPCSpeed; }
 bool     PixelEngine::RunAwayState::getIsHidden() const { return m_IsHidden; }

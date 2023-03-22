@@ -2,8 +2,8 @@
 
 
 void PixelEngine::HideState::setIsHidden(bool tempHidden)    { m_IsHidden = tempHidden; }
-void PixelEngine::HideState::setNPCSpeed(Vector3D tempSpeed) { m_NPCSpeed = tempSpeed;  }
+void PixelEngine::HideState::setNPCSpeed(glm::vec3 tempSpeed) { m_NPCSpeed = tempSpeed;  }
 
 
-Vector3D PixelEngine::HideState::getNPCSpeed() const { return m_NPCSpeed; }
+glm::vec3 PixelEngine::HideState::getNPCSpeed() const { return m_NPCSpeed; }
 bool     PixelEngine::HideState::getIsHidden() const { return m_IsHidden; }

@@ -1,5 +1,15 @@
 #pragma once
 #include "NPC.h"
+
+
+
+#include <glm/glm.hpp> // Includes the core GLM library
+#include <glm/gtc/matrix_transform.hpp> // For matrix transformations (e.g., glm::translate, glm::rotate, glm::scale)
+#include <glm/gtc/type_ptr.hpp> // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
+#include <glm/gtc/constants.hpp> // For mathematical constants (e.g., glm::pi)
+#include <glm/gtx/string_cast.hpp> // For converting GLM types to strings (e.g., glm::to_string)
+
+
 	
     /*******************************************************************************************************************************************************************
 	 * @class   : HideState
@@ -27,12 +37,12 @@ namespace PixelEngine
                 /*******************************************************************************************************
                  * @brief  : setNPCSpeed()
                  * @brief  : used to set the variable m_ChaseSpeed with tempSpeed
-                 * @param  : Vector3D tempSpeed - temporary speed variable for x,y,z plane
+                 * @param  : glm::vec3 tempSpeed - temporary speed variable for x,y,z plane
                  * 
                  * @return : void
                  *******************************************************************************************************/ 
             
-            void setNPCSpeed(Vector3D tempSpeed);
+            void setNPCSpeed(glm::vec3 tempSpeed);
 
 
                 /*******************************************************************************************************
@@ -54,7 +64,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
             
-            Vector3D getNPCSpeed() const;
+            glm::vec3 getNPCSpeed() const;
 
 
                 /*******************************************************************************************************
@@ -68,6 +78,6 @@ namespace PixelEngine
 
         private:
             bool m_IsHidden;
-            Vector3D m_NPCSpeed;
+            glm::vec3 m_NPCSpeed;
 	};
 }
