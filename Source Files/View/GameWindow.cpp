@@ -1,6 +1,7 @@
 #include "GameWindow.h"
 
 
+
 void PixelEngine::GameWindow::clear()
 {
     m_ProjectTitle = "";
