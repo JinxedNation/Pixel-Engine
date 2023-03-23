@@ -1,6 +1,6 @@
 #include "ChaseState.h"
 
-
+/*
 void PixelEngine::ChaseState::update(NPC* tempNPC)  
 {
     setSpeed();
@@ -16,3 +16,6 @@ void PixelEngine::ChaseState::setSpeed(glm::vec3 tempSpeed) { m_NPCSpeed = tempS
     ///return m_ChaseSpeed;
 glm::vec3 PixelEngine::ChaseState::getNPCSpeed() const { return m_NPCSpeed; }
 bool     PixelEngine::ChaseState::getIsHidden() const { return m_IsHidden; }
+
+
+*/

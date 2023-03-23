@@ -1,22 +1,2 @@
-﻿  Factory_GameAsset.cpp
-  LuaLoader.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(4,73): error C2178: 'PixelEngine::LuaLoader::{ctor}' cannot be declared with 'explicit' specifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(14,19): error C2065: 'm_launchLua': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Lua\LuaLoader.cpp(27,22): error C2065: 'm_launchLua': undeclared identifier
-  ChaseState.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\ChaseState.h(40,18): error C3668: 'PixelEngine::ChaseState::update': method with override specifier 'override' did not override any base class methods
-  HideState.cpp
-  NPC.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,24): error C2039: 'set_NPCState': is not a member of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\NPC.h(18): message : see declaration of 'PixelEngine::NPC'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,36): error C2182: 'set_NPCState': illegal use of type 'void'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,37): error C2065: 'NPC_States': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,49): error C2065: 'tempState': undeclared identifier
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,60): error C2143: syntax error: missing ';' before '{'
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Model\AI\NPC.cpp(3,60): error C2447: '{': missing function header (old-style formal list?)
-  RunAwayState.cpp
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\Core\Model\AI\RunAwayState.h(39,8): error C3668: 'PixelEngine::RunAwayState::update': method with override specifier 'override' did not override any base class methods
-  Perlin_Terrain.cpp
-  GameWindow.cpp
-  Generating Code...
-C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Source Files\Core\Factory_GameAsset.cpp(19): error C4716: 'PixelEngine::Factory_GameAsset::generate_ObjectType': must return a value
+﻿  GameWindow.cpp
+  PixelEngine.vcxproj -> C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\x64\Debug\PixelEngine.exe

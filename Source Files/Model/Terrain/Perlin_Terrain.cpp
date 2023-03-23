@@ -1,7 +1,7 @@
 #include "Perlin_Terrain.h"
 
 int m_TextureSize = 128;
-
+/*
 GLuint m_TextureName = 0;
 GLubyte *m_TexturePtr;
 
@@ -57,3 +57,5 @@ void Perlin_Terrain::generateTexture(void)
 
     }
 }
+
+*/

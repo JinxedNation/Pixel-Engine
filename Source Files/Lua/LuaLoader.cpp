@@ -1,12 +1,12 @@
 #include "LuaLoader.h"
 
-
+/*
 explicit PixelEngine::LuaLoader::LuaLoader(const std::string& tempFile) : m_ReadFile(tempFile)
 {
 
 }
-
-
+*/
+/*
 void PixelEngine::LuaLoader::LoadScript()
 {
     lua_State* m_LaunchState = luaL_newstate();
@@ -53,3 +53,4 @@ void PixelEngine::LuaLoader::DisplayErrorType(lua_State* m_LaunchState)
 
     lua_pop(m_LaunchState);
 }
+*/

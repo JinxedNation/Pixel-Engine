@@ -13,6 +13,7 @@
      * @bug     : None known, however engineer was tired I suggest bringing coffee
      *******************************************************************************************************************************************************************/
 
+
 namespace PixelEngine
 {
     class NPC_States
@@ -23,7 +24,7 @@ namespace PixelEngine
                  * @brief : Used to delete an NPC_States object
                  *************************/
 
-            virtual ~NPC_States() {}
+          //  virtual ~NPC_States() {}
 
 
                 /*************************
@@ -31,6 +32,6 @@ namespace PixelEngine
                  * @brief : virtual function which will be modified in each of the ai states
                  *************************/
 
-            virtual void update(NPC* tempNPC) = 0;
+           // virtual void update(NPC* tempNPC) = 0;
     };
 }

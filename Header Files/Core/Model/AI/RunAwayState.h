@@ -21,6 +21,8 @@
 	 * @bug     : None known, however engineer was tired I suggest bringing coffee
 	 *******************************************************************************************************************************************************************/
 
+
+
 namespace PixelEngine
 {
 	class RunAwayState : public NPC_States
@@ -36,7 +38,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
             
-		void update(NPC* tempNPC) override;
+		//void update(NPC* tempNPC) override;
 
 
                 /*******************************************************************************************************

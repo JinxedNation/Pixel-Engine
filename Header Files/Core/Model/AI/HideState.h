@@ -31,7 +31,7 @@ namespace PixelEngine
 		public:
 
 
-			void update(NPC* tempNPC) override;
+			//void update(NPC* tempNPC) override;
 
 
                 /*******************************************************************************************************

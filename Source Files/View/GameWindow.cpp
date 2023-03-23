@@ -15,7 +15,7 @@ PixelEngine::GameWindow::GameWindow(int tempWidth, int tempHeight, const char* t
 {
     m_GameWindow = launchGameWindow(m_wWidth, m_wHeight, m_ProjectTitle);
     
-    glfwMakeContextCurrent(m_GameWindow);
+   // glfwMakeContextCurrent(m_GameWindow);
     glfwSwapInterval(1);
 }
 
@@ -32,6 +32,9 @@ void PixelEngine::GameWindow::getGLFWSettings()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+
+
 }
 
 
@@ -56,6 +59,9 @@ void PixelEngine::GameWindow::testIsGLFWWorking()
         
         exit(EXIT_FAILURE);
     }
+
+   
+
 }
 
 
@@ -85,13 +91,33 @@ void PixelEngine::GameWindow::testIsGLADWorking()
 
 
 GLFWwindow* PixelEngine::GameWindow::launchGameWindow(int tempWidth, int tempHeight, const char* tempTitle)
+//GLFWwindow* PixelEngine::GameWindow::launchGameWindow()
 {
     testIsGLFWWorking();
     getGLFWSettings();
 
-
+   
     GLFWwindow* m_GameWindow = glfwCreateWindow(tempWidth, tempHeight, tempTitle, NULL, NULL);
+    
     testBuildWindow(m_GameWindow);
+
+    glfwMakeContextCurrent(m_GameWindow);
+    testIsGLADWorking();
+
+
+    glClearColor(0.4f, 0.7f, 0.9f, 1.0f); // (red, green, blue, alpha)
+    // Temporary loop just to make sure window actually appears and things are set up properly
+    while (!glfwWindowShouldClose(m_GameWindow)) {
+
+        glClear(GL_COLOR_BUFFER_BIT);
+       
+
+        glfwSwapBuffers(m_GameWindow);
+
+        glfwPollEvents();
+       
+    }
+    glfwTerminate();
 
 
     return m_GameWindow;

@@ -55,13 +55,13 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/
 
-            void set_NPCState(NPC_States* tempState);
+           // void set_NPCState(NPC_States* tempState);
     
 
 
         protected:
 
-            NPC_States* m_NPCState = nullptr;
+           // NPC_States* m_NPCState = nullptr;
     };
 }
 

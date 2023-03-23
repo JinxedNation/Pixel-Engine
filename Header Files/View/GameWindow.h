@@ -186,6 +186,7 @@ namespace PixelEngine
 				 *********************************************************************************************/
 
 			GLFWwindow* launchGameWindow(int tempWidth, int tempHeight, const char* tempTitle);
+			//GLFWwindow* launchGameWindow();
 
 
 		private:

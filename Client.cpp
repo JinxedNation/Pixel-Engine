@@ -15,7 +15,7 @@ int main()
 {
 	PixelEngine::GameWindow pixelsEngine(640, 480, "Pixel's World");
 	
-	pixelsEngine.launchGameWindow(650, 640, "Pixels World");
+	
 
 
 	return 0;
