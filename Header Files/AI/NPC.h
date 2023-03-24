@@ -1,6 +1,6 @@
 #pragma once
-#include "NPC_States.h"
-
+#include "NPC_State.h"
+#include "NPC_AI_Component.h"
 
      /*******************************************************************************************************************************************************************
       * @class   : NPC
@@ -18,6 +18,15 @@ namespace PixelEngine
     class NPC
     {
         public:
+
+        
+                /*******************************************************************************************************
+                 * @brief  : NPC Constructor 
+                 * @brief  : used used to delete a NPC object
+                 * @return : void
+                 *******************************************************************************************************/
+
+            NPC();
 
                 /*******************************************************************************************************
                  * @brief  : NPC Destructor 
@@ -49,10 +58,53 @@ namespace PixelEngine
 
 
                 /*******************************************************************************************************
+                 * @brief  : setVelocity
+                 * @brief  : used to set the NPC's current velocity
+                 * @param  : glm::vec3& tempVelocity
+                 * @return : void
+                 *******************************************************************************************************/
+
+            void setVelocity(const glm::vec3& tempVelocity);
+
+
+                /*******************************************************************************************************
+                 * @brief  : setXYZLocation
+                 * @brief  : used to set the NPC's XYZ Location
+                 * @param  : glm::vec3& tempXYZ
+                 * @return : void
+                 *******************************************************************************************************/
+
+            void setXYZLocation(const glm::vec3& tempXYZ);
+
+
+
+                /*******************************************************************************************************
+                 * @brief  : getXYZLocation
+                 * @brief  : used to get the NPC's XYZ Location
+                 * @param  : 
+                 * @return : glm::vec3 m_XYZLocation
+                 *******************************************************************************************************/
+
+            const glm::vec3& getXYZLocation() const;
+
+            
+
+                /*******************************************************************************************************
+                 * @brief  : getVelocity
+                 * @brief  : used to get the NPC's velocity
+                 * @param  : 
+                 * @return : m_Velocity glm::vec3
+                 *******************************************************************************************************/
+
+            const glm::vec3& getVelocity() const;
+
+
+
+                /*******************************************************************************************************
                  * @brief  : set_NPCState
                  * @brief  : used to set the current state of the NPC
                  * @param  : NPC_States* tempState -> a temporary state to set the m_AIState
-                 * @return : void
+                 * @return : 
                  *******************************************************************************************************/
 
            // void set_NPCState(NPC_States* tempState);
@@ -60,8 +112,12 @@ namespace PixelEngine
 
 
         protected:
+            glm::vec3 m_XYZLocation;
+            glm::vec3 m_Velocity;
 
-           // NPC_States* m_NPCState = nullptr;
+      
+        //NPC_AI_Component m_NPC_Component;
+        // NPC_States* m_NPCState = nullptr;
     };
 }
 

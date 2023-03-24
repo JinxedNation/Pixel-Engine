@@ -17,6 +17,8 @@ Iterate and refine: Once you have implemented all sections, iterate over each co
 By implementing the sections in this order, you can progressively build up your game engine and ensure that each component works correctly before moving on to the next one.
 
 
+New plan from line 90 if we use the new deisgn method
+
 GameEngine/
 │
 ├── Assets/
@@ -71,3 +73,112 @@ GameEngine/
 └── Main/
     ├── main.cpp
     └── GameEngineConfig.lua
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    game_engine/
+|-- include/
+|   |-- core/
+|   |   |-- components/
+|   |   |   |-- object.hpp
+|   |   |   |-- transform_component.hpp
+|   |   |   |-- render_component.hpp
+|   |   |   |-- keyboard_input_component.hpp
+|   |   |   |-- mouse_input_component.hpp
+|   |   |
+|   |   |-- systems/
+|   |   |   |-- system.hpp
+|   |   |   |-- drawing_system.hpp
+|   |   |   |-- manage_keyboard_input_system.hpp
+|   |   |   |-- manage_mouse_input_system.hpp
+|   |   |
+|   |   |-- entity/
+|   |   |   |-- entity.hpp
+|   |
+|   |-- ai/
+|   |   |-- fsm/
+|   |   |   |-- state.hpp
+|   |   |   |-- state_machine.hpp
+|   |   |   |-- concrete_states.hpp
+|   |   |-- npc_ai_component.hpp
+|   |
+|   |-- graphics/
+|   |   |-- graphics_api.hpp
+|   |   |-- opengl_graphics_api.hpp
+|   |
+|   |-- terrain/
+|   |   |-- terrain.hpp
+|   |   |-- perlin_terrain.hpp
+|   |
+|   |-- utils/
+|   |   |-- (any utility headers you might need)
+|
+|-- src/
+|   |-- core/
+|   |   |-- components/
+|   |   |   |-- object.cpp
+|   |   |   |-- transform_component.cpp
+|   |   |   |-- render_component.cpp
+|   |   |   |-- keyboard_input_component.cpp
+|   |   |   |-- mouse_input_component.cpp
+|   |   |
+|   |   |-- systems/
+|   |   |   |-- system.cpp
+|   |   |   |-- drawing_system.cpp
+|   |   |   |-- manage_keyboard_input_system.cpp
+|   |   |   |-- manage_mouse_input_system.cpp
+|   |   |
+|   |   |-- entity/
+|   |   |   |-- entity.cpp
+|   |
+|   |-- ai/
+|   |   |-- fsm/
+|   |   |   |-- state.cpp
+|   |   |   |-- state_machine.cpp
+|   |   |   |-- concrete_states.cpp
+|   |   |-- npc_ai_component.cpp
+|   |
+|   |-- graphics/
+|   |   |-- graphics_api.cpp
+|   |   |-- opengl_graphics_api.cpp
+|   |
+|   |-- terrain/
+|   |   |-- terrain.cpp
+|   |   |-- perlin_terrain.cpp
+|   |
+|   |-- utils/
+|   |   |-- (any utility source files you might need)
+|
+|-- scripts/
+|   |-- (Lua scripts for game data and configuration)
+|
+|-- assets/
+|   |-- models/
+|   |-- textures/
+|   |-- shaders/
+|
+|-- third_party/
+|   |-- (third-party libraries, such as Lua, Luabridge, Sol2, OpenGL, etc.)
+|
+|-- CMakeLists.txt (or other build system configuration files)
+|-- main.cpp
+|-- README.md

@@ -1,37 +1,50 @@
 #pragma once
-#include "NPC.h"
+#include "NPC_State.h"
 
 
-
+#include <memory>
 #include <glm/glm.hpp> // Includes the core GLM library
 #include <glm/gtc/matrix_transform.hpp> // For matrix transformations (e.g., glm::translate, glm::rotate, glm::scale)
 #include <glm/gtc/type_ptr.hpp> // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
 #include <glm/gtc/constants.hpp> // For mathematical constants (e.g., glm::pi)
 #include <glm/gtx/string_cast.hpp> // For converting GLM types to strings (e.g., glm::to_string)
 
-
-	
     /*******************************************************************************************************************************************************************
-	 * @class   : HideState
-	 * @brief   : Calls the abstract base class NPC_States before performing an update and various other tasks
-	 *          : Triggers the NPC to hide within reason from whoever the chaser currently is if the chaser gets to close the state changes to flee
-				: If the NPC is tagged however the state is changed to Chase
-	 *
-	 *
-	 * @author  : William Halling
-	 * @date    : 2023 March
-	 * @version : 1.0
-	 * @bug     : None known, however engineer was tired I suggest bringing coffee
-	 *******************************************************************************************************************************************************************/
+     * @class   : ChaseState
+     * @brief   : Calls the abstract base class NPC_States before performing an update and various other tasks
+     *          : Triggers the NPC to chase either the player or the other NPCS until it tags either an NPC or Player
+     *
+     *
+     * @author  : William Halling
+     * @date    : 2023 March
+     * @version : 1.0
+     * @bug     : None known, however engineer was tired I suggest bringing coffee
+     * @version : 1.1 
+     * @brief   : added GLM libraries
+     * @author  : Jason
+     * @version : 1.2 
+     * @brief   : added smart pointers
+     * @author  : William
+     *******************************************************************************************************************************************************************/
 
 namespace PixelEngine
 {
-	class HideState : public NPC_States
-	{
-		public:
+    class ChaseState : public NPC_State
+    {
+        public:
 
-
-			//void update(NPC* tempNPC) override;
+            ChaseState();
+        
+                /*******************************************************************************************************
+                 * @brief  : update()
+                 * @brief  : sets the NPCS state, Note NPC leaves this state once it tags a player
+                 * @brief  : Performs necessary update functions as required
+                 * @param  : std::shared_ptr<NPC> tempNPC
+                 * 
+                 * @return : void
+                 *******************************************************************************************************/ 
+            
+            //void update(float deltaTime, std::shared_ptr<NPC> tempNPC) override;
 
 
                 /*******************************************************************************************************
@@ -75,9 +88,12 @@ namespace PixelEngine
 
             bool getIsHidden() const;
 
-
         private:
             bool m_IsHidden;
             glm::vec3 m_NPCSpeed;
-	};
+    };
 }
+
+
+
+    

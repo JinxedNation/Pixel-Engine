@@ -1,8 +1,8 @@
 #pragma once
 
 #include "NPC.h"
-
-
+#include "NPC_State.h"
+#include <memory>
 #include <glm/glm.hpp> // Includes the core GLM library
 #include <glm/gtc/matrix_transform.hpp> // For matrix transformations (e.g., glm::translate, glm::rotate, glm::scale)
 #include <glm/gtc/type_ptr.hpp> // For converting between C++ types and their GLSL equivalents (e.g., glm::value_ptr)
@@ -25,20 +25,24 @@
 
 namespace PixelEngine
 {
-	class RunAwayState : public NPC_States
+	class RunAwayState : public NPC_State
 	{
         public:
-                            
+
+
+            RunAwayState();
+
+
                 /*******************************************************************************************************
                  * @brief  : update()
                  * @brief  : sets the NPCS state, Note NPC leaves this state once the chaser gets too close
                  * @brief  : Performs necessary update functions as required
                  * @param  : NPC* tempNPC
-                 * 
+                 *  //try use smart pointer
                  * @return : void
                  *******************************************************************************************************/ 
             
-		//void update(NPC* tempNPC) override;
+		    //void update(void update(float deltaTime, std::shared_ptr<NPC>) override;
 
 
                 /*******************************************************************************************************

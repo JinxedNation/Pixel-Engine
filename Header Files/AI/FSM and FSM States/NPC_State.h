@@ -1,6 +1,6 @@
 #pragma once
 #include "NPC.h"
-
+#include <memory>
     /*******************************************************************************************************************************************************************
      * @class   : NPC_States Abstract Base Class
      * @brief   : Enables us to create multiple classes that can represent a range of differnet NPC Behaviours / states
@@ -16,15 +16,24 @@
 
 namespace PixelEngine
 {
-    class NPC_States
+    class NPC_State 
     {
         public:
+            
                 /*************************
-                 * @brief : NPC_States Destructor 
+                 * @brief : NPC_State Destructor 
                  * @brief : Used to delete an NPC_States object
                  *************************/
 
-          //  virtual ~NPC_States() {}
+            NPC_State();
+
+
+                /*************************
+                 * @brief : NPC_State Destructor 
+                 * @brief : Used to delete an NPC_States object
+                 *************************/
+
+          //  virtual ~NPC_State() {}
 
 
                 /*************************
@@ -32,6 +41,6 @@ namespace PixelEngine
                  * @brief : virtual function which will be modified in each of the ai states
                  *************************/
 
-           // virtual void update(NPC* tempNPC) = 0;
+           // virtual void update(float deltaTime, std::shared_ptr<NPC> tempNPC) = 0;
     };
 }
