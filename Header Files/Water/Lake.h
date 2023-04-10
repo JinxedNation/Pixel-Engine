@@ -33,6 +33,7 @@ protected:
 };
 
 
+/***
 class GaussianWaveSimulation : public WaterSimulation {
 public:
     GaussianWaveSimulation(int width, int height, int wave_length);
@@ -71,4 +72,4 @@ void WaterSimulation::update(float deltaTime) {
 //Implement the render() method:
 void WaterSimulation::render() {
     // Render the water using reflection, refraction, normal, and dudv maps
-}
+}**/
