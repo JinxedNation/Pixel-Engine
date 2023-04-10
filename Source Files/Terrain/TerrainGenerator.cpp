@@ -4,7 +4,7 @@
 
 
 
-
+/*  -- TEMPORARILY COMMENTING OUT CODE THAT DOESN"T COMPILE
 
 std::vector<TerrainData_Type> PixelEngine::TerrainGenerator::createTerrainVerts(const std::vector<std::vector<float>>& terrainMap)
 {
@@ -25,6 +25,7 @@ int PixelEngine::TerrainGenerator::getTerrainHeight() const { return m_TerrainHe
 const std::vector<TerrainData_Type>& PixelEngine::TerrainGenerator::getTerrainVerts() const { return m_Verts; }
 const std::vector<unsigned int>& PixelEngine::TerrainGenerator::getTerrainIndexs() const { return m_Indicies;}
 
+*/
  
  /*** To be modified and implemented
   * 

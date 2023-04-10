@@ -44,7 +44,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
 
-            void changeState(std::shared_ptr<NPC_State> newState);
+           // void changeState(std::shared_ptr<NPC_State> newState);
 
 
                 /*******************************************************************************************************
@@ -54,10 +54,10 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
 
-            void update(float deltaTime, std::shared_ptr<NPC> tempNpc);
+          //  void update(float deltaTime, std::shared_ptr<NPC> tempNpc);
 
 
         private:
-            std::shared_ptr<NPC_State> m_CurrentState;
+           // std::shared_ptr<NPC_State> m_CurrentState;
     };
 }

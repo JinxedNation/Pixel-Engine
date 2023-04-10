@@ -29,7 +29,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
             
-            NPCAIComponent(std::shared_ptr<NPC> tempNPC);
+         //   NPCAIComponent(std::shared_ptr<NPC> tempNPC);
 
 
                 /*******************************************************************************************************
@@ -41,7 +41,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
                 
-            void update(float deltaTime, std::shared_ptr<NPC> tempNPC);
+          //  void update(float deltaTime, std::shared_ptr<NPC> tempNPC);
 
 
                 /*******************************************************************************************************
@@ -53,7 +53,7 @@ namespace PixelEngine
                  * @return : void
                  *******************************************************************************************************/ 
             
-            void changeState(std::shared_ptr<NPC_State> tempNewState);
+           // void changeState(std::shared_ptr<NPC_State> tempNewState);
 
 
         private:

@@ -1,6 +1,8 @@
 #include "GameWindow.h"
 
 
+#include "Core/Engine.h"
+
 
 /*******************
  * @class   : Client
@@ -13,8 +15,11 @@
 
 int main()
 {
-	PixelEngine::GameWindow pixelsEngine(640, 480, "Pixel's World");
+	//PixelEngine::GameWindow pixelsEngine(640, 480, "Pixel's World");
 	
+	auto& pixEng = Engine::getInstance();
+	pixEng.init();
+	pixEng.run();
 	
 
 
