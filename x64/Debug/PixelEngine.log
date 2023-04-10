@@ -1,2 +1,136 @@
-﻿  GameWindow.cpp
-  PixelEngine.vcxproj -> C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\x64\Debug\PixelEngine.exe
+﻿  ChaseState.cpp
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(47,46): error C2065: 'NPC_State': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(47,35): error C2923: 'std::shared_ptr': 'NPC_State' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(47): message : see declaration of 'NPC_State'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(61,29): error C2065: 'NPC_State': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(61,18): error C2923: 'std::shared_ptr': 'NPC_State' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(61): message : see declaration of 'NPC_State'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,44): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,33): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(56,46): error C2065: 'NPC_State': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(56,35): error C2923: 'std::shared_ptr': 'NPC_State' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(56): message : see declaration of 'NPC_State'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,36): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,39): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,52): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,24): error C2086: 'const int PixelEngine::NPC::vec3': redefinition
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,49): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,23): error C3646: 'm_XYZLocation': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,23): error C3646: 'm_Velocity': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  HideState.cpp
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,44): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,33): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,36): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,39): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,52): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,24): error C2086: 'const int PixelEngine::NPC::vec3': redefinition
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,49): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,23): error C3646: 'm_XYZLocation': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,23): error C3646: 'm_Velocity': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  NPC.cpp
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,44): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,33): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,36): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,39): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,52): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,24): error C2086: 'const int PixelEngine::NPC::vec3': redefinition
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,49): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,23): error C3646: 'm_XYZLocation': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,23): error C3646: 'm_Velocity': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  RunAwayState.cpp
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\FSM and FSM States\FiniteStateMachine.h(57): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,44): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32,33): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(32): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,58): error C2065: 'NPC': undeclared identifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44,47): error C2923: 'std::shared_ptr': 'NPC' is not a valid template type argument for parameter '_Ty'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC_AI_Component.h(44): message : see declaration of 'NPC'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,36): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(67,45): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,39): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(77,48): error C2143: syntax error: missing ',' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(88,52): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,19): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,28): error C2143: syntax error: missing ';' before '&'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,24): error C2086: 'const int PixelEngine::NPC::vec3': redefinition
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(99,49): error C2238: unexpected token(s) preceding ';'
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,23): error C3646: 'm_XYZLocation': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(115,36): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,13): error C2653: 'glm': is not a class or namespace name
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,23): error C3646: 'm_Velocity': unknown override specifier
+C:\Users\jason\OneDrive\Documents\GitHub\Pixel-Engine\Header Files\AI\NPC.h(116,33): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  Factory_GameAsset.cpp
+  Perlin_Terrain.cpp
+  Generating Code...

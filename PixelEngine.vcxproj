@@ -21,21 +21,21 @@
   <ItemGroup>
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="glad.c" />
+    <ClCompile Include="Source Files\AI\ChaseState.cpp" />
+    <ClCompile Include="Source Files\AI\HideState.cpp" />
+    <ClCompile Include="Source Files\AI\NPC.cpp" />
+    <ClCompile Include="Source Files\AI\RunAwayState.cpp" />
     <ClCompile Include="Source Files\Core\Factory_GameAsset.cpp" />
     <ClCompile Include="Source Files\Core\Object.cpp" />
     <ClCompile Include="Source Files\Core\Player.cpp" />
-    <ClCompile Include="Source Files\Lua\LuaLoader.cpp" />
-    <ClCompile Include="Source Files\Model\AI\ChaseState.cpp" />
-    <ClCompile Include="Source Files\Model\AI\HideState.cpp" />
-    <ClCompile Include="Source Files\Model\AI\NPC.cpp" />
-    <ClCompile Include="Source Files\Model\AI\RunAwayState.cpp" />
-    <ClCompile Include="Source Files\Model\Terrain\Perlin_Terrain.cpp" />
-    <ClCompile Include="Source Files\View\GameWindow.cpp" />
+    <ClCompile Include="Source Files\Graphics\GameWindow.cpp" />
+    <ClCompile Include="Source Files\Scripts\LuaLoader.cpp" />
+    <ClCompile Include="Source Files\Terrain\Perlin_Terrain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header Files\AI\FSM and FSM States\ChaseState.h" />
+    <ClInclude Include="Header Files\AI\FSM and FSM States\HideState.h" />
     <ClInclude Include="Header Files\Core\Factory_GameAsset.h" />
-    <ClInclude Include="Header Files\Core\Model\AI\ChaseState.h" />
-    <ClInclude Include="Header Files\Core\Model\AI\HideState.h" />
     <ClInclude Include="Header Files\Core\Model\AI\NPC.h" />
     <ClInclude Include="Header Files\Core\Model\AI\NPC_States.h" />
     <ClInclude Include="Header Files\Core\Model\AI\RunAwayState.h" />
@@ -125,7 +125,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/View;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Core/Model/Terrain;$(SolutionDir)/Header Files/Core/Model/AI;$(SolutionDir)/Header Files/Core/Model;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/AI;$(SolutionDir)/Header Files/AI/FSM and FSM States;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Core/Components;$(SolutionDir)/Header Files/Core/Systems;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/Input;$(SolutionDir)/Header Files/;$(SolutionDir)/Header Files/Water;$(SolutionDir)/Header Files/Terrain;$(SolutionDir)/Header Files/Scripts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,7 +142,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/View;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Core/Model/Terrain;$(SolutionDir)/Header Files/Core/Model/AI;$(SolutionDir)/Header Files/Core/Model;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/AI;$(SolutionDir)/Header Files/AI/FSM and FSM States;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Core/Components;$(SolutionDir)/Header Files/Core/Systems;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/Input;$(SolutionDir)/Header Files/;$(SolutionDir)/Header Files/Water;$(SolutionDir)/Header Files/Terrain;$(SolutionDir)/Header Files/Scripts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -157,7 +159,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/View;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Core/Model/Terrain;$(SolutionDir)/Header Files/Core/Model/AI;$(SolutionDir)/Header Files/Core/Model;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/AI;$(SolutionDir)/Header Files/AI/FSM and FSM States;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Core/Components;$(SolutionDir)/Header Files/Core/Systems;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/Input;$(SolutionDir)/Header Files/;$(SolutionDir)/Header Files/Water;$(SolutionDir)/Header Files/Terrain;$(SolutionDir)/Header Files/Scripts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -173,7 +176,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/View;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Core/Model/Terrain;$(SolutionDir)/Header Files/Core/Model/AI;$(SolutionDir)/Header Files/Core/Model;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/Header Files/AI;$(SolutionDir)/Header Files/AI/FSM and FSM States;$(SolutionDir)/Header Files/Core;$(SolutionDir)/Header Files/Core/Components;$(SolutionDir)/Header Files/Core/Systems;$(SolutionDir)/Header Files/Graphics_API;$(SolutionDir)/Header Files/Graphics_API/Type;$(SolutionDir)/Header Files/Input;$(SolutionDir)/Header Files/;$(SolutionDir)/Header Files/Water;$(SolutionDir)/Header Files/Terrain;$(SolutionDir)/Header Files/Scripts;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
