@@ -2,6 +2,14 @@
 #include "NPC_State.h"
 #include "NPC_AI_Component.h"
 
+
+
+// Math (Facade this later?)
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+
+
      /*******************************************************************************************************************************************************************
       * @class   : NPC
       * @brief   : Abstract base class used to define a basic interface for all NPCs that will be in thegame
