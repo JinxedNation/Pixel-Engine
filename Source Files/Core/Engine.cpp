@@ -7,12 +7,12 @@ Engine* Engine::staticInstance = nullptr;
 
 
 
-Engine::Engine()
+PixelEngine::Engine::Engine()
 {
 
 }
 
-Engine::~Engine()
+PixelEngine::Engine::~Engine()
 {
 	// delete allocated memory? 
 	delete engineWindow;
@@ -20,22 +20,22 @@ Engine::~Engine()
 }
 
 
-Engine& Engine::getInstance()
+Engine& PixelEngine::Engine::getInstance()
 {
-	if (!staticInstance) {
+	if (!staticInstance) 
+	{
 		staticInstance = new Engine();
 	}
 
 	return *staticInstance;
-
-
 }
 
 
 
 // init all the engine variables 
-void Engine::init() {
-
+void PixelEngine::Engine::init() 
+{
+	/// initialize all subsystems required and game state
 
 	// Step 1 : read all the lua files to fill up the member objects of the engine class?
 
@@ -45,8 +45,16 @@ void Engine::init() {
 }
 
 // running the loop
-void Engine::run() {
+void PixelEngine::Engine::run() 
+{
+	while(!engineWindow->shouldClose())
+	{
+		///generateGameWorld
+		///inputclass object
+		///OpenGLAPI object
 
+		engineWindow->swapBuffers();
+	}
 
 
 }
