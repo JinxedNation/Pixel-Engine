@@ -53,6 +53,9 @@
     <ClInclude Include="Header Files\Core\Components\object.h" />
     <ClInclude Include="Header Files\Core\Components\Rendering_Component.h" />
     <ClInclude Include="Header Files\Core\Components\Transform_Component.h" />
+    <ClInclude Include="Header Files\Core\Engine.h" />
+    <ClInclude Include="Header Files\Core\Factories\API_Factory.h" />
+    <ClInclude Include="Header Files\Core\Factories\Factory_GameAsset.h" />
     <ClInclude Include="Header Files\Core\Factory_GameAsset.h" />
     <ClInclude Include="Header Files\Core\Object.h" />
     <ClInclude Include="Header Files\Core\Player.h" />
@@ -66,6 +69,7 @@
     <ClInclude Include="Header Files\Graphics_API\Lighting.h" />
     <ClInclude Include="Header Files\Graphics_API\Shader.h" />
     <ClInclude Include="Header Files\Graphics_API\Type\API_Type_OpenGL.h" />
+    <ClInclude Include="Header Files\Graphics_API\Type\OpenGL_API.h" />
     <ClInclude Include="Header Files\Input\Input_Manager.h" />
     <ClInclude Include="Header Files\Input\Keyboard_Input.h" />
     <ClInclude Include="Header Files\Input\Mouse_Input.h" />
